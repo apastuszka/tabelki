@@ -4,9 +4,11 @@ tabelki
 tabelki w HTML5:
 
 ```html
-<table>
-<tr>
-
+ <table>
+   <tr>
+     <td>A<td>B
+   <tr>
+     <td>A<td>B
 </table>
 ```
 
