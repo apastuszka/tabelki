@@ -3,56 +3,90 @@
   <head>
     <meta charset="utf-8">
     <title>Tabelki - pierwsze próby</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
   </head>
   <body>
-    <div>
-      <header>
-        <h1>Tabelki</h1>
-        <p>tabelki w HTML5</p>
-      </header>
-	  <section>
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Próby tworzenia tabelek w html5:</h3>
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <h1>Tabelki w HTML5</h1>
+    <p>Próby tworzenia tabelek w html5:</p>
 
-<table width="50%">
-<caption style="font-size: 14pt; text-align: left"><strong>Kurczaki</strong></caption>
-<colgroup align="right">
+<table id="kurczaki">
+<caption><ul><li>Kurczaki</li></ul></caption>
+<colgroup class="right">
 <colgroup span="3" align="center">
 <colgroup align="left">
-<thead style="background-color: gray; font-style: italic; font-size: 10pt">
+<thead>
 <tr>
 <td>American<br>Chicken<td>Fraench<br>Connection<td>Age<br>(moths)<td>Wight<br>(lbs)<td>Cooking<br>Methods
 </tr>
 </thead>
-<tbody style="font-size: 10pt">
-<tr><td>Squab<td>Poussin<td>2<td>3/4 to 1<td>Broil, Grill, Roast
-<tr><td>Broiler<td>Poulet Nouveau<td>2 to 3<td>1 1/2 to 2 1/2<td>Broil, Grill, Roast
-<tr><td>Fryer<td>Poulet Reine<td>3 to 5<td>2 to 3<td>Fry, Saute, Roast
-<tr><td>Roaster<td>Poularde<td>5 1/2 to 9<td>Over 3<td>Roast, Poach, Fricassee
-<tr><td>Fowl<td>Poule de l'Annee<td>10 to 12<td>Over 3<td>Stew,Fricassee
-<tr><td>Rooster<td>Coq<td>Over 12<td>Over 3<td>Sooup stock, Forcemeat
+<tbody>
+<tr><th>Squab<td>Poussin<td>2<td>3/4 to 1<td>Broil, Grill, Roast
+<tr><th>Broiler<td>Poulet Nouveau<td>2 to 3<td>1 1/2 to 2 1/2<td>Broil, Grill, Roast
+<tr><th>Fryer<td>Poulet Reine<td>3 to 5<td>2 to 3<td>Fry, Saute, Roast
+<tr><th>Roaster<td>Poularde<td>5 1/2 to 9<td>Over 3<td>Roast, Poach, Fricassee
+<tr><th>Fowl<td>Poule de l'Annee<td>10 to 12<td>Over 3<td>Stew, Fricassee
+<tr><th>Rooster<td>Coq<td>Over 12<td>Over 3<td>Sooup stock, Forcemeat
 </tbody>
 </table>
 <p></p>
-<table width="40%">
-<caption style="font-size: 4; text-align: left"><strong>XVI w.</strong></caption>
-<tbody style="font-size: 10pt; font-style: italic">
-<tr><td rowspan="2" valign="top">England<td>P.Philips<td style="text-align: right">1560-1628</td><td rowspan="2" valign="top">Netherlands<td>J.P. Sweelinck<td style="text-align: right">1562-1621</tr>
-<tr><td>J.Bull<td style="text-align: right">c1563-1628<td>P.Cornet<td style="text-align: right">c1570-1633</tr>
-<tr><td rowspan="2" valign="top">Germany<td>J.L.Hassler<td style="text-align: right">1562-1612<td>Italy<td>G.Frescobaldi<td style="text-align: right">1583-1643</tr>
-<tr><td>M.Praetorus<td style="text-align: right">1571-1621<td>Spain<td>F.Correa de Arauxo<td style="text-align: right">c1576-1654</tr>
-<tr><td>France<td>J.Titelouze<td style="text-align: right">1563-1633<td>Portugal<td>M.R.Coelho<td style="text-align: right">c1555-c1635</tr>
+<table id="wiek">
+<caption><ul><li>XVI w.</li></ul></caption>
+<tbody>
+<tr>
+  <td>England</td>
+  <td>P.Philips</td>
+  <td>1560-1628</td>
+  <td>Netherlands</td>
+  <td>J.P. Sweelinck</td>
+  <td>1562-1621</td>
+</tr>
+<tr>
+  <td></td>
+  <td>J.Bull</td>
+  <td>c1563-1628</td>
+  <td></td>
+  <td>P.Cornet</td>
+  <td>c1570-1633</td>
+</tr>
+<tr>
+  <td>Germany</td>
+  <td>J.L.Hassler</td>
+  <td>1562-1612</td>
+  <td>Italy</td>
+  <td>G.Frescobaldi</td>
+  <td>1583-1643</td>
+</tr>
+<tr>
+  <td></td>
+  <td>M.Praetorus</td>
+  <td>1571-1621</td>
+  <td>Spain</td>
+  <td>F.Correa de Arauxo</td>
+  <td>c1576-1654</td>
+</tr>
+<tr>
+  <td>France</td>
+  <td>J.Titelouze</td>
+  <td>1563-1633</td>
+  <td>Portugal</td>
+  <td>M.R.Coelho</td>
+  <td>c1555-c1635</td>
+</tr>
 </tbody>
 </table>
-<p></p>
-<table>
-<caption align="left">Populacja</caption>
-<colgroup width="100">
-<colgroup width="180">
-<thead style="text-align: center">
-<tr><td>Year<td>World Population
+<p>
+</p>
+<table id="populacja">
+<caption><ul><li>Populacja</li><ul></caption>
+<thead>
+<tr>
+  <td>Year<td>World Population
+</tr>
 </thead>
-<tbody style="text-align: right">
+<tbody>
 <tr><td>8000 B.C.<td>5,000,000
 <tr><td>50 A.D.<td>200,000,000
 <tr><td>1650 A.D.<td>500,000,000
@@ -61,9 +95,44 @@
 <tr><td>1980 A.D.<td>4,400,000,000
 </tbody>
 </table>
+<p></p>
+<table id="worksheet">
+  <caption><ul><li>Worksheet</li></ul></caption>
+  <tr>
+    <td>1</td>
+    <td>Adjusted gross income..........  $4,000</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Zero bracket amount for</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>a single individual........  $2,300</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Earned income...........    <u>  1,500</u></td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Subtract line 3 from line 2......     <u>  800</u></td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>Add lines 1 and 4. Enter here</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>and on Form 1040, line 35......  $4,800</td>
+  </tr>
+</table>
+<table id="AT">
+<caption><ul><li>AT&ampT</li><ul></caption>
 
-      </section>
-    </div>
+</table>
+
+      
     <footer>
       <p>Project maintained by <a href="https://github.com/apastuszka">apastuszka</a></p>
       <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
